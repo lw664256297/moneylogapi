@@ -1,11 +1,14 @@
 package main
+
 import (
 	"log"
+	"moneylogapi/router"
 	"net/http"
-	"moneylogapi/router"	
+
 	"github.com/gin-gonic/gin"
 )
-func main()  {
+
+func main() {
 	// 初始化gin框架路由
 	g := gin.New()
 
