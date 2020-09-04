@@ -23,6 +23,6 @@ func main() {
 
 	// 监听端口
 	log.Printf("Start to listening the incoming requests on http address: %s", ":8080")
-	log.Printf(http.ListenAndServe(":8080", g.Error()))
+	log.Printf(http.ListenAndServe(":8080", g).Error())
 
 }

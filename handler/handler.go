@@ -7,6 +7,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type Response struct {
+	Code    int         `json:"code"`
+	Message string      `json:"message"`
+	Data    interface{} `json:"data"`
+}
+
 // SenResponse 返回值格式化
 func SenResponse(c *gin.Context, err error, data interface{}) {
 	code, message := error.DecodeErr(err)
